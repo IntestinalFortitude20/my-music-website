@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Music EPK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Artist Name</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="container">
+            <section class="contact-header">
+                <h1>Get in Touch</h1>
+                <p>I'd love to hear from you! Whether you're interested in booking, collaboration, or just want to say hello.</p>
+            </section>
+
+            <section class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Send Me a Message</h2>
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-note">
+                            <p><strong>Note:</strong> To enable this contact form, sign up at <a href="https://formspree.io" target="_blank">Formspree.io</a> and replace YOUR_FORM_ID in the form action attribute with your actual form ID.</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject...</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="press">Press/Media</option>
+                                <option value="general">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Tell me more about your inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-info-card">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        <p class="info-note">For general inquiries and booking</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>📱 Phone</h3>
+                        <p><a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+                        <p class="info-note">Call or text for urgent matters</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>📍 Location</h3>
+                        <p>City, State</p>
+                        <p class="info-note">Available for performances nationwide</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>🎵 Management</h3>
+                        <p>Management Name/Company</p>
+                        <p><a href="mailto:management@example.com">management@example.com</a></p>
+                        <p class="info-note">For professional bookings</p>
+                    </div>
+
+                    <div class="social-media-section">
+                        <h3>Connect on Social Media</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="Facebook">
+                                <div class="icon-placeholder">[FB]</div>
+                            </a>
+                            <a href="#" class="social-icon" title="Instagram">
+                                <div class="icon-placeholder">[IG]</div>
+                            </a>
+                            <a href="#" class="social-icon" title="Twitter">
+                                <div class="icon-placeholder">[TW]</div>
+                            </a>
+                            <a href="#" class="social-icon" title="YouTube">
+                                <div class="icon-placeholder">[YT]</div>
+                            </a>
+                            <a href="#" class="social-icon" title="TikTok">
+                                <div class="icon-placeholder">[TT]</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter-section">
+                <div class="newsletter-signup">
+                    <h2>📬 Stay Updated</h2>
+                    <p>Subscribe to my newsletter for exclusive updates, new releases, and event announcements.</p>
+                    <form class="newsletter-form" action="#" method="POST">
+                        <div class="newsletter-note">
+                            <p><strong>Note:</strong> To enable this newsletter, integrate with a service like <a href="https://mailchimp.com" target="_blank">Mailchimp</a> or <a href="https://buttondown.email" target="_blank">Buttondown</a>.</p>
+                        </div>
+                        <div class="newsletter-input-group">
+                            <input type="email" name="newsletter-email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>How can I book you for an event?</h3>
+                        <p>Fill out the contact form above with "Booking Inquiry" as the subject, or reach out directly via email. Include details about your event, date, venue, and budget.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you travel for performances?</h3>
+                        <p>Yes! I'm available for performances nationwide and internationally. Travel fees may apply depending on location.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are you available for collaborations?</h3>
+                        <p>Absolutely! I'm always interested in collaborating with other artists. Send me a message with details about your project.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I get press materials?</h3>
+                        <p>Visit my <a href="about.html">About page</a> for press photos and EPK materials, or contact me directly for specific assets.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Artist Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">[Social Media Links]</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
