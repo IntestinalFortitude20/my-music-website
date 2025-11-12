@@ -974,6 +974,10 @@ footer .container {
         grid-template-columns: 1fr;
     }
 
+    .profile-image-placeholder {
+        margin: 0 auto;
+    }
+
     .cards,
     .albums-grid,
     .video-grid,
