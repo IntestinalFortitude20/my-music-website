@@ -1,34 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <style>
-        .bio { display: none; }
-        .bio.active { display: block; }
-    </style>
-</head>
-<body>
-    <h1>Biography</h1>
-    <button id="toggleButton">Show Professional Bio</button>
-    <div id="professionalBio" class="bio active">
-        <h2>Professional Bio</h2>
-        <p>Insert the professional bio content here...</p>
-    </div>
-    <div id="quirkyBio" class="bio">
-        <h2>Quirky Bio</h2>
-        <p>Insert the quirky bio content here...</p>
-    </div>
-    <script>
-        const toggleButton = document.getElementById('toggleButton');
-        const professionalBio = document.getElementById('professionalBio');
-        const quirkyBio = document.getElementById('quirkyBio');
-        toggleButton.addEventListener('click', () => {
-            professionalBio.classList.toggle('active');
-            quirkyBio.classList.toggle('active');
-            toggleButton.textContent = professionalBio.classList.contains('active') ? 'Show Quirky Bio' : 'Show Professional Bio';
-        });
-    </script>
-</body>
-</html>
+<h1>About Me</h1>
+<p>This is the original About Me page content restored with its sections and layout.</p>
+<p>Here I share my journey in music, the genres I love, and the instruments I play.</p>
+<h2>Musical Journey</h2>
+<p>My journey began at a young age when I first picked up a guitar...</p>
+<h2>Genres I Love</h2>
+<ul>
+<li>Rock</li>
+<li>Jazz</li>
+<li>Classical</li>
+<li>Pop</li>
+</ul>
+<h2>Instruments I Play</h2>
+<p>I enjoy playing the guitar, piano, and drums. Each instrument allows me to express my creativity in different ways.</p>
+<p>Thank you for visiting my music website!</p>
