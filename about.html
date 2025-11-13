@@ -37,6 +37,28 @@
         }
     </style>
 </head>
+    <script>
+        // Toggle bios
+        const btnProfessional = document.getElementById('btn-professional');
+        const btnQuirky = document.getElementById('btn-quirky');
+        const bioProfessional = document.getElementById('bio-professional');
+        const bioQuirky = document.getElementById('bio-quirky');
+    
+        btnProfessional.addEventListener('click', function() {
+            btnProfessional.classList.add('active');
+            btnQuirky.classList.remove('active');
+            bioProfessional.classList.add('active');
+            bioQuirky.classList.remove('active');
+        });
+    
+        btnQuirky.addEventListener('click', function() {
+            btnQuirky.classList.add('active');
+            btnProfessional.classList.remove('active');
+            bioQuirky.classList.add('active');
+            bioProfessional.classList.remove('active');
+        });
+    </script>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
