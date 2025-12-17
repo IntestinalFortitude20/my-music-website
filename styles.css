@@ -1016,9 +1016,19 @@ footer .container {
 }
 
 .hamburger-icon::before,
-.hamburger-icon::after,
-.hamburger-icon span {
+.hamburger-icon::after {
     content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon span {
+    display: block;
     position: absolute;
     left: 0;
     width: 100%;
@@ -1069,7 +1079,8 @@ body.menu-open {
         display: block;
     }
 
-    /* Keep nav-container as flex row on mobile */
+    /* Override to keep nav-container as flex row on mobile
+       This positions the logo on the left and hamburger button on the right */
     .nav-container {
         flex-direction: row;
         padding: 1rem 2rem;
