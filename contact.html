@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Music EPK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">PJR Music</h1>
+            <h1 class="logo">PJR Music Studio</h1>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="hamburger-icon"><span></span></span>
             </button>
@@ -18,6 +19,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="events.html">Events</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </div>
@@ -36,9 +38,9 @@
                     <form class="contact-form" action="https://formspree.io/f/mqarrray" method="POST">
                         <input type="hidden" name="_next" value="https://patrickjruckmanmusic.com/index.html">
                         
-                        <div class="form-note">
+                        <!-- <div class="form-note">
                             <p><strong>Note:</strong> To enable this contact form, sign up at <a href="https://formspree.io" target="_blank">Formspree.io</a> and replace YOUR_FORM_ID in the form action attribute with your actual form ID.</p>
-                        </div>
+                        </div> -->
                         
                         <div class="form-group">
                             <label for="name">Name *</label>
@@ -52,13 +54,14 @@
 
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                            <input type="tel" id="phone" name="phone" placeholder="(716) 555-0123">
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Subject *</label>
                             <select id="subject" name="subject" required>
                                 <option value="">Select a subject...</option>
+                                <option value="lessons">Lessons</option>
                                 <option value="booking">Booking Inquiry</option>
                                 <option value="collaboration">Collaboration</option>
                                 <option value="press">Press/Media</option>
@@ -81,47 +84,38 @@
                     
                     <div class="contact-info-card">
                         <h3>📧 Email</h3>
-                        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        <p><a href="mailto:pjrmusicstudio@gmail.com">pjrmusicstudio@gmail.com</a></p>
                         <p class="info-note">For general inquiries and booking</p>
                     </div>
 
                     <div class="contact-info-card">
                         <h3>📱 Phone</h3>
-                        <p><a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+                        <p><a href="tel:+17085819722">+1 (708) 581-9722</a></p>
                         <p class="info-note">Call or text for urgent matters</p>
                     </div>
 
                     <div class="contact-info-card">
                         <h3>📍 Location</h3>
-                        <p>City, State</p>
-                        <p class="info-note">Available for performances nationwide</p>
+                        <p>Oak Lawn, IL</p>
+                        <p class="info-note">Available for local performances, in-person and online lessons, and regional travel and select national bookings.</p>
                     </div>
 
-                    <div class="contact-info-card">
+                    <!-- <div class="contact-info-card">
                         <h3>🎵 Management</h3>
                         <p>Management Name/Company</p>
                         <p><a href="mailto:management@example.com">management@example.com</a></p>
                         <p class="info-note">For professional bookings</p>
-                    </div>
+                    </div> -->
 
                     <div class="social-media-section">
                         <h3>Connect on Social Media</h3>
                         <div class="social-icons">
-                            <a href="#" class="social-icon" title="Facebook">
-                                <div class="icon-placeholder">[FB]</div>
-                            </a>
-                            <a href="#" class="social-icon" title="Instagram">
-                                <div class="icon-placeholder">[IG]</div>
-                            </a>
-                            <a href="#" class="social-icon" title="Twitter">
-                                <div class="icon-placeholder">[TW]</div>
-                            </a>
-                            <a href="#" class="social-icon" title="YouTube">
-                                <div class="icon-placeholder">[YT]</div>
-                            </a>
-                            <a href="#" class="social-icon" title="TikTok">
-                                <div class="icon-placeholder">[TT]</div>
-                            </a>
+                            <div class="social-links">
+                                <a href="https://youtube.com/@pjrmusicstudio" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="https://patreon.com/patrickjruckmanmusic" target="_blank" aria-label="Patreon"><i class="fab fa-patreon"></i></a>
+                                <a href="https://discord.gg/9wKrps9usw" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                                <a href="https://github.com/intestinalfortitude20" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +137,7 @@
                 </div>
             </section>
 
-            <section class="faq-section">
+            <!-- <section class="faq-section">
                 <h2>Frequently Asked Questions</h2>
                 <div class="faq-list">
                     <div class="faq-item">
@@ -163,15 +157,18 @@
                         <p>Visit my <a href="about.html">About page</a> for press photos and EPK materials, or contact me directly for specific assets.</p>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Patrick J. Ruckman / PJR Music. All rights reserved.</p>
+            <p>&copy; 2025 Patrick J. Ruckman / PJR Music Studio. All rights reserved.</p>
             <div class="social-links">
-                <a href="#" class="social-link">[Social Media Links]</a>
+                <a href="https://youtube.com/@pjrmusicstudio" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://patreon.com/patrickjruckmanmusic" target="_blank" aria-label="Patreon"><i class="fab fa-patreon"></i></a>
+                <a href="https://discord.gg/9wKrps9usw" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                <a href="https://github.com/intestinalfortitude20" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>

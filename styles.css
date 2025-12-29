@@ -1,6 +1,6 @@
 /* Root Variables */
 :root {
-    --primary-color: #d4a574;
+    --primary-color: #d4a674ba;
     --secondary-color: #9d7847;
     --accent-color: #c19a6b;
     --dark-bg: #0f0f0f;
@@ -165,6 +165,7 @@ body {
 
 .btn-secondary:hover {
     background-color: var(--white);
+    transform: translateY(-2px);
     color: var(--primary-color);
 }
 
@@ -187,9 +188,42 @@ body {
     font-size: 0.875rem;
 }
 
+.card-image-placeholder {
+    background-color: var(--placeholder-bg);
+    border: 2px solid var(--placeholder-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    /* height: 300px; */
+    object-fit: cover;
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card p {
+    color: white;
+    font-weight: 200;
+}
+
+.card img {
+    height: 300px;
+}
+
+/* .card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(212, 165, 116, 0.2);
+} */
+
 .audio-player-placeholder,
 .video-placeholder,
-.card-image-placeholder,
 .profile-image-placeholder,
 .track-image-placeholder,
 .album-cover-placeholder,
@@ -200,7 +234,7 @@ body {
 .platform-icon-placeholder,
 .icon-placeholder {
     background-color: var(--placeholder-bg);
-    border: 2px dashed var(--placeholder-text);
+    border: 2px solid var(--placeholder-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -555,6 +589,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: start;
 }
 
 .video-item {
@@ -566,6 +604,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .video-item iframe {
@@ -760,6 +799,225 @@ body {
     margin-bottom: 2rem;
 }
 
+
+/* Lessons Page */
+.lessons-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(212, 165, 116, 0.05) 100%);
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.lessons-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-text);
+}
+
+.lessons-hero p {
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+}
+
+/* Four Pillars Grid */
+.four-pillars {
+    margin-bottom: 3rem;
+}
+
+.four-pillars h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pillar-card {
+    background: #252525;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(212, 165, 116, 0.2);
+}
+
+.pillar-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.pillar-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-text);
+}
+
+.pillar-card p {
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+/* Teaching Philosophy */
+.teaching-philosophy {
+    background: #252525;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.teaching-philosophy h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-text);
+}
+
+.philosophy-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: var(--secondary-text);
+}
+
+.philosophy-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Logistics Section */
+.logistics {
+    margin-bottom: 3rem;
+}
+
+.logistics h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.logistics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.logistics-card {
+    background: #252525;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.logistics-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logistics-card p {
+    color: var(--secondary-text);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.needs-list {
+    list-style: none;
+    padding: 0;
+    color: var(--secondary-text);
+    line-height: 1.8;
+}
+
+.needs-list li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.needs-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Call to Action Section */
+.lessons-cta {
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(212, 165, 116, 0.05) 100%);
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.lessons-cta h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.lessons-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-text);
+}
+
+.lessons-cta .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.booking-note {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(212, 165, 116, 0.2);
+    color: var(--secondary-text);
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lessons-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .four-pillars h2,
+    .logistics h2,
+    .lessons-cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logistics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lessons-cta .cta-buttons {
+        flex-direction: column;
+    }
+
+    .lessons-cta .cta-buttons .btn {
+        width: 100%;
+    }
+}
+
+
 /* Contact Page */
 .contact-content {
     display: grid;
@@ -868,13 +1126,51 @@ body {
     margin-top: 2rem;
 }
 
-.social-icons {
+.social-links {
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
+    justify-content: center;
     margin-top: 1rem;
 }
 
-.social-icon {
+.social-links a {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    transform: scale(1.5);
+}
+
+.social-links a[aria-label="YouTube"] {
+    color: #FF0000;
+}
+
+.social-links a[aria-label="Patreon"] {
+    color: #FF424D;
+}
+
+.social-links a[aria-label="Discord"] {
+    color: #5865F2;
+}
+
+.social-links a[aria-label="GitHub"] {
+    color: #ffffff;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.social-icon .social-links a {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
     text-decoration: none;
 }
 
@@ -1152,11 +1448,12 @@ body.menu-open {
 
     .cards,
     .albums-grid,
-    .video-grid,
     .past-events-grid {
         grid-template-columns: 1fr;
     }
     
+    
+
     .track-item,
     .event-card {
         grid-template-columns: 1fr;
@@ -1202,9 +1499,9 @@ body.menu-open {
         font-size: 0.9rem;
     }
 
-    /* .video-grid {
+    .video-grid {
         grid-template-columns: 1fr;
-    } */
+    }
 
     /* .video-item iframe {
         max-width: 100%;
