@@ -1503,6 +1503,32 @@ body.menu-open {
         grid-template-columns: 1fr;
     }
 
+    /*Social Media*/
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+
+    .social-links a[aria-label="YouTube"] {
+        color: #FF0000;
+    }
+
+    .social-links a[aria-label="Patreon"] {
+        color: #FF424D;
+    }
+
+    .social-links a[aria-label="Discord"] {
+        color: #5865F2;
+    }
+
+    .social-links a[aria-label="GitHub"] {
+        color: #ffffff;
+    }
     /* .video-item iframe {
         max-width: 100%;
     } */
