@@ -92,11 +92,14 @@ body {
     justify-content: center;
     color: var(--white);
     text-align: center;
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.85), rgba(45, 36, 22, 0.85)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%231a1a1a;stop-opacity:1" /><stop offset="50%" style="stop-color:%232d2416;stop-opacity:1" /><stop offset="100%" style="stop-color:%231a1a1a;stop-opacity:1" /></linearGradient><pattern id="musicPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="%23d4a574" opacity="0.3"/><circle cx="150" cy="100" r="3" fill="%239d7847" opacity="0.2"/><circle cx="100" cy="150" r="2" fill="%23c19a6b" opacity="0.3"/><path d="M 30 80 Q 40 60 50 80 T 70 80" stroke="%23d4a574" stroke-width="2" fill="none" opacity="0.2"/></pattern></defs><rect width="1200" height="500" fill="url(%23grad1)"/><rect width="1200" height="500" fill="url(%23musicPattern)"/></svg>');
+    /* background: linear-gradient(135deg, rgba(26, 26, 26, 0.85), rgba(45, 36, 22, 0.85)), */
+    background:            url('https://via.placeholder.com/1200x500');         
+    /* url('./images/personal photos/hero1.jpg'); */
+                
+                /* url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%231a1a1a;stop-opacity:1" /><stop offset="50%" style="stop-color:%232d2416;stop-opacity:1" /><stop offset="100%" style="stop-color:%231a1a1a;stop-opacity:1" /></linearGradient><pattern id="musicPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="%23d4a574" opacity="0.3"/><circle cx="150" cy="100" r="3" fill="%239d7847" opacity="0.2"/><circle cx="100" cy="150" r="2" fill="%23c19a6b" opacity="0.3"/><path d="M 30 80 Q 40 60 50 80 T 70 80" stroke="%23d4a574" stroke-width="2" fill="none" opacity="0.2"/></pattern></defs><rect width="1200" height="500" fill="url(%23grad1)"/><rect width="1200" height="500" fill="url(%23musicPattern)"/></svg>'); */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     overflow: hidden;
 }
 
@@ -1538,5 +1541,3 @@ body.menu-open {
     } */
 
 }
-
-@import url('styles.css');
