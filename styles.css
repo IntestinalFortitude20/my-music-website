@@ -1374,7 +1374,7 @@ footer .container {
     transform: scale(1.1);
 }
 
-.mobile-menu-toggle:focus {
+.mobile-menu-toggle:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 4px;
 }
@@ -1565,6 +1565,7 @@ body.menu-open {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
 
     }
     
