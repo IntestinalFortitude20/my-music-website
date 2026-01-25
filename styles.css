@@ -89,7 +89,7 @@ body {
 .hero {
     position: relative;
     width: 100%;
-    min-height: /*500px*/ calc(100vh - 100px);
+    min-height: /*500px*/ calc(100dvh - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +102,15 @@ body {
     background-position: center 0%;
     background-attachment: fixed;
     overflow: hidden;
+}
+
+/* iOS-specific fix - removes fixed attachment which causes zoom issues */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .hero::before {
@@ -1626,6 +1635,16 @@ body.menu-open {
         background-size: cover;
         background-position: center 20%;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         /* min-height: 100vh; */
     }
+
+    /* iOS-specific fix - removes fixed attachment which causes zoom issues */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll;
+        /* background-size: cover;
+        background-position: center; */
+    }
+}
 }
