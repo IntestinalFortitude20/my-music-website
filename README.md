@@ -1,123 +1,31 @@
-# Music EPK Website
+# Patrick J. Ruckman / PJR Music Studio Booking Site
 
-My personal music website which contains my contact information and electronic press kit.
+**A professional studio management, event booking, and client onboarding platform.**
 
-## Features
+## Description
 
-- **Home Page**: Hero section with featured music and highlights
-- **About Me**: Biography, musical journey timeline, influences, and press kit materials
-- **Music & Performances**: Audio players, album listings, video embeds, and streaming links
-- **Events**: Upcoming shows with event cards and past performances
-- **Contact**: Contact form, email information, social media links, and FAQ
+This is a high-conversion digital storefront and management tool for my professional music business. It’s designed to handle the "administrative bottleneck" of music education and music performance by providing a centralized location for student intake, service descriptions, contact management, and booking information. It has a streamlined, professional entry point for new clients or anyone else looking to get in touch.
 
-## GitHub Pages Setup
+## Why I Built It
 
-This website is configured to work with GitHub Pages. To enable it:
+I needed a central hub where students and bookers could go to get in touch with me, whether it is for one-on-one private lessons, group lessons which are run by me and hosted by my local park district, or booking for an individual or group performance.
 
-1. Go to your repository Settings
-2. Navigate to Pages section (under Code and automation)
-3. Under "Source", select "Deploy from a branch"
-4. Select the branch you want to deploy (usually `main` or `master`)
-5. Click Save
+In my experience as a **Program Director**, I saw how easily potential students can get lost with knowing how to progress their skills on their instruments, or how to connect with other local musicians. Drawing on **Behavioral Psychology**, I built this site with "low-friction" design principles—using clear call-to-action buttons and organized service tiers—to ensure the transition from a curious visitor to an enrolled student is as seamless as possible.
 
-Your site will be published at: `https://[username].github.io/[repository-name]/`
+## Tech Stack
 
-## Customization Guide
+**Frontend:** Vanilla HTML/CSS  
+**Architecture:** Modular HTML structure for easy updates to service offerings.  
+**Forms/Logic:** Formspree integration for secure, reliable client data collection.  
+**Design:** Custom CSS focused on brand identity and mobile-first responsiveness.  
 
-### Updating Content
+## Project Status: Completed (v1.0)
 
-1. **Artist Name & Branding**: Replace "Artist Name" throughout all HTML files
-2. **Images**: Replace placeholder divs with actual images:
-   ```html
-   <!-- Replace this: -->
-   <div class="hero-image-placeholder">
-       <span class="placeholder-text">[Hero Image Placeholder]</span>
-   </div>
-   
-   <!-- With this: -->
-   <img src="images/hero-photo.jpg" alt="Artist Name" class="hero-image">
-   ```
+- [x] **Done:** Developed a responsive, brand-aligned UI.  
+- [x] **Done:** Integrated secure intake forms for lead generation.  
+- [ ] **Up Next:** Update service-tier architecture for one-on-one lesson types.  
+- [ ] **Up Next:** Integrating a live calendar API for real-time scheduling.  
+- [ ] **Up Next:** Implementing integrated payment methods and automated schedule coordination.  
 
-3. **Audio Players**: Replace placeholder divs with actual audio players:
-   ```html
-   <!-- Example with HTML5 audio: -->
-   <audio controls>
-       <source src="music/song.mp3" type="audio/mpeg">
-       Your browser does not support the audio element.
-   </audio>
-   ```
-
-4. **Video Embeds**: Replace placeholder divs with YouTube/Vimeo embeds:
-   ```html
-   <iframe width="560" height="315" 
-       src="https://www.youtube.com/embed/VIDEO_ID" 
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-       allowfullscreen>
-   </iframe>
-   ```
-
-### Contact Form Setup
-
-The contact form uses Formspree (free service):
-
-1. Sign up at [Formspree.io](https://formspree.io)
-2. Create a new form
-3. Copy your form ID
-4. Update the form action in `contact.html`:
-   ```html
-   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
-
-### Newsletter Integration
-
-To add newsletter functionality, integrate with services like:
-- [Mailchimp](https://mailchimp.com)
-- [Buttondown](https://buttondown.email)
-- [ConvertKit](https://convertkit.com)
-
-### Color Scheme
-
-Customize colors in `styles.css` by modifying the CSS variables:
-
-```css
-:root {
-    --primary-color: #6366f1;    /* Main brand color */
-    --secondary-color: #8b5cf6;  /* Secondary brand color */
-    --accent-color: #ec4899;     /* Accent highlights */
-    /* ... other variables ... */
-}
-```
-
-## File Structure
-
-```
-my-music-website/
-├── index.html          # Home page
-├── about.html          # About me page
-├── music.html          # Music and performances
-├── events.html         # Events calendar
-├── contact.html        # Contact information and form
-├── styles.css          # All styling
-├── _config.yml         # GitHub Pages configuration
-└── README.md           # This file
-```
-
-## Adding Assets
-
-Create these folders for your media files:
-- `/images/` - for photos and graphics
-- `/music/` - for audio files
-- `/videos/` - for video files (if self-hosting)
-- `/downloads/` - for EPK PDFs and press materials
-
-## Browser Support
-
-This website is compatible with all modern browsers including:
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers
-
-## License
-
-© 2025 Artist Name. All rights reserved.
+---
+*Developed by Patrick Ruckman | Software Developer, Music Program Director, Guitarist* 
