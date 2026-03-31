@@ -29,8 +29,9 @@
         <div class="container">
             <!-- Hero Section -->
             <section class="lessons-hero">
-                <h1>Unlock Your Musical Potential</h1>
-                <p>Master guitar, improvisation, and music production with personalized lessons tailored to your goals.</p>
+                <p class="hero-eyebrow">Private Guitar Lessons</p>
+                <h1>Focused Lessons. Clear Progress.</h1>
+                <p>Personalized guitar, improvisation, and production lessons built around your goals, schedule, and current level.</p>
             </section>
 
             <!-- Four Pillars Grid -->
@@ -57,7 +58,7 @@
                         <div class="pillar-icon">
                             <i class="fas fa-laptop"></i>
                         </div>
-                        <h3>Digital Studio & DAW Mastery</h3>
+                        <h3>Digital Studio & DAW Fluency</h3>
                         <p>Learn professional music production using Ableton Live and other DAWs. From recording and mixing to sound design, develop skills to create professional-quality music at home.</p>
                     </div>
 
@@ -73,11 +74,14 @@
 
             <!-- Teaching Philosophy -->
             <section class="teaching-philosophy">
-                <h2>My Philosophy as a Guitarist & Instructor</h2>
+                <h2>What to Expect from Lessons</h2>
                 <div class="philosophy-content">
-                    <p>Music is not just about playing the right notes—it's about understanding the "why" behind those notes and expressing your unique voice as a musician. My approach combines technical excellence with creative freedom, grounded in a deep understanding of music theory and its real-world applications.</p>
-                    <p>I believe every student, regardless of age or experience level, has the potential to become a confident, versatile musician. My years working with students of all ages have taught me how to adapt my teaching style to match each person's learning pace and musical goals. Whether you're a complete beginner or an advanced player looking to expand your horizons, I'm here to guide you on your musical journey.</p>
-                    <p>In my lessons, we focus on building skills that last—critical listening, problem-solving, and musical intuition. You'll learn not just how to play, but how to think like a musician and make informed, creative decisions in any musical situation.</p>
+                    <ul class="expectations-list">
+                        <li>Each lesson has a clear focus, with practical goals you can track week to week.</li>
+                        <li>You get a personalized plan based on your level, interests, and musical direction.</li>
+                        <li>We balance technique, ear training, repertoire, and creative application in every cycle.</li>
+                        <li>You'll leave lessons with concrete practice steps so you always know what to work on next.</li>
+                    </ul>
                 </div>
             </section>
 
@@ -86,8 +90,17 @@
                 <h2>How Things Work</h2>
                 <div class="logistics-grid">
                     <div class="logistics-card">
+                        <h3><i class="fas fa-tag"></i> Rate</h3>
+                        <p><strong>$40 per 30-minute lesson</strong>. Longer sessions are available by request based on scheduling and goals.</p>
+                    </div>
+
+                    <div class="logistics-card">
                         <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
-                        <p>Choose what works best for you: <strong>In-Person</strong> lessons at my studio or <strong>Online</strong> via Discord for maximum flexibility. Both formats are equally effective and tailored to your needs.</p>
+                        <!-- <p>Choose what works best for you: <strong>In-Person</strong> lessons at my studio or <strong>Online</strong> via Discord for maximum flexibility. Both formats are equally effective and tailored to your needs.</p> -->
+                        <p>Lessons are currently in-person at my home studio (condo).</p>
+                        <p>For younger students or anyone who prefers a common area, lessons will be held at the kitchen table.</p>
+                        <p>For adult students who are comfortable with it, lessons may be held in my private studio workspace.</p>
+                        <p>I maintain professional liability insurance for my in-home teaching studio.</p>
                     </div>
 
                     <div class="logistics-card">
@@ -99,7 +112,7 @@
                         <h3><i class="fas fa-list-check"></i> What You'll Need</h3>
                         <ul class="needs-list">
                             <li>A guitar (or access to one during lessons)</li>
-                            <li>Stable internet connection (for online lessons)</li>
+                            <!-- <li>Stable internet connection (for online lessons)</li> -->
                             <li>A curious mind and willingness to learn</li>
                         </ul>
                     </div>
@@ -111,19 +124,37 @@
                 </div>
             </section>
 
+            <!-- Booking Section -->
+            <section class="booking-process" id="book-lesson">
+                <h2>Book a Lesson</h2>
+                <p class="booking-intro">Use the calendar below to select a time slot that works best for you.</p>
+                <div class="booking-note">
+                    <p><strong>Note:</strong> Bookings are handled through TidyCal, and payments are processed securely through Stripe (integrated with TidyCal).</p>
+                </div>
+                <div class="calendar-container">
+                    <div class="tidycal-embed" data-path="pjrmusicstudio/guitar-mastery-session-1dldkp5"></div>
+                </div>
+                <!-- <div class="booking-format-card">
+                    <h3><i class="fas fa-sliders"></i> Lesson Format Options</h3>
+                    <ul class="needs-list">
+                        <li>In-person at my studio</li>
+                        <li>Online via Discord</li>
+                        <li>Phone/video consultation (15 min, free)</li>
+                    </ul>
+                </div> -->
+            </section>
+
             <!-- Call to Action -->
             <section class="lessons-cta">
-                <h2>Ready to Start Your Musical Journey?</h2>
-                <p>Take the first step with a free 15-minute consultation call. Let's discuss your goals, learning style, and how I can help you become the musician you want to be.</p>
+                <h2>Ready to Get Started?</h2>
+                <p>Choose a lesson time in the calendar above to get started. If you have questions before booking, use the Get in Touch form.</p>
                 
                 <div class="cta-buttons">
-                    <a href="#book-call" class="btn btn-primary">Book a Free Consultation</a>
-                    <a href="#inquiry" class="btn btn-secondary">Inquire About Rates & Availability</a>
+                    <a href="#book-lesson" class="btn btn-primary">Book a Lesson</a>
+                    <a href="contact.html" class="btn btn-secondary">Ask a Question</a>
                 </div>
 
-                <div class="booking-note">
-                    <p><strong>Note:</strong> Bookings are handled through TidyCal. Click the button above to schedule your free 15-minute phone call or fill out an inquiry form to learn more about rates and lesson packages.</p>
-                </div>
+                
             </section>
 
             <!-- FAQ Section -->
@@ -132,24 +163,43 @@
                 <div class="faq-list">
                     <div class="faq-item">
                         <h3>How long are lessons?</h3>
-                        <p>Standard lessons are 30, 45, or 60 minutes, depending on your preference and goals. We can discuss what works best during your free consultation.</p>
+                        <p>Standard lessons are 30 minutes; longer sessions and bulk lesson packages are available by request, with details based on your goals and schedule discussed directly with me.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Can I take lessons online?</h3>
-                        <p>Absolutely! Online lessons via Discord work just as well as in-person. You'll need a stable internet connection and your guitar, and we can get started from anywhere.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Do you teach only jazz?</h3>
-                        <p>While jazz is my foundation, I teach a wide range of styles including blues, fusion, classic rock, and modern music. We'll focus on what interests you most.</p>
+                        <h3>What are your rates?</h3>
+                        <p>My base rate is <strong>$40 per 30-minute lesson</strong>. If you'd like longer sessions, we can set that up based on availability.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Are you open to students with no experience?</h3>
                         <p>Yes! I work with complete beginners of all ages. We'll start at your level and progress at a pace that feels comfortable for you.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>How do I know if I'm ready for lessons?</h3>
-                        <p>Everyone is ready! Whether you've never touched a guitar or been playing for years, a free consultation will help us determine the best starting point for your journey.</p>
+                        <h3>What should parents know before booking lessons?</h3>
+                        <p>Lessons are held in-person at my private home studio (condo). For younger students or anyone who prefers a common area, lessons will be held at the kitchen table.</p>
                     </div>
+                    <div class="faq-item">
+                        <h3>Can parents stay during lessons?</h3>
+                        <p>Yes. One parent or guardian is welcome to stay during lessons. Due to limited studio space and shared living arrangements, I ask that attendance be limited to one parent/guardian.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How do I know if I'm ready for lessons?</h3>
+                        <p>Everyone is ready! If you're not sure where to start, feel stuck in your playing, or have a specific goal you want to reach, lessons can give you a focused next step. If you have questions about your personal situation, please reach out using the "Get in Touch" form on the Contact page, and I’ll help you decide the best direction.</p>
+                    </div>
+                    <!-- <div class="faq-item">
+                        <h3>Can I take lessons online?</h3>
+                        <p>Absolutely! Online lessons via Discord work just as well as in-person. You'll need a stable internet connection and your guitar, and we can get started from anywhere.</p>
+                    </div> -->
+                    
+                    <div class="faq-item">
+                        <h3>Do you teach only jazz?</h3>
+                        <p>While jazz is my foundation, I teach a wide range of styles including blues, fusion, classic rock, and modern music. We'll focus on what interests you most.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you teach music production in all DAWs?</h3>
+                        <p>Production lessons are primarily Ableton Live-focused, where I can offer the deepest guidance. If you use another DAW, I can still help you get started and build solid fundamentals in recording, editing, and workflow.</p>
+                    </div>
+                    
+                    
                 </div>
             </section>
         </div>
@@ -166,6 +216,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
     <script src="script.js"></script>
 </body>
 </html>
