@@ -1255,6 +1255,13 @@ body {
     .booking-process {
         padding: 1.5rem;
     }
+
+    .calendar-container {
+        border-radius: 8px;
+        padding: 0;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+}
 }
 
 
