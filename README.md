@@ -3,7 +3,7 @@
 **A professional studio management, event booking, and client onboarding platform.**
 
 <p align="center">
-  <img src="website-thumbnail.jpg" alt="Portfolio Preview" width="100%">
+  <img src="website-thumbnail.png" alt="Portfolio Preview" width="100%">
 </p>
 
 ## Description
