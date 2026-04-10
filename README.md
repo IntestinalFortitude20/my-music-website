@@ -2,6 +2,10 @@
 
 **A professional studio management, event booking, and client onboarding platform.**
 
+<p align="center">
+  <img src="website-thumbnail.jpg" alt="Portfolio Preview" width="100%">
+</p>
+
 ## Description
 
 This is a high-conversion digital storefront and management tool for my professional music business. It’s designed to handle the "administrative bottleneck" of music education and music performance by providing a centralized location for student intake, service descriptions, contact management, and booking information. It has a streamlined, professional entry point for new clients or anyone else looking to get in touch.
