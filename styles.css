@@ -1711,6 +1711,19 @@ body.menu-open {
         grid-template-columns: 1fr;
     }
 
+    .about-content a {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+
+    .about-content a:hover {
+        color: var(--white);
+    }
+
+    .about-content a:visited {
+        color: var(--secondary-color);
+    }
+
     .profile-image-placeholder {
         width: 100%;
         max-width: none;
@@ -1794,6 +1807,19 @@ body.menu-open {
 
     .video-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-content a {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+
+    .about-content a:hover {
+        color: var(--white);
+    }
+
+    .about-content a:visited {
+        color: var(--secondary-color);
     }
 
     /*Social Media*/
