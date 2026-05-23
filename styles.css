@@ -355,6 +355,8 @@ body {
     padding-bottom: 0;
 }
 
+
+
 .about-hero h1,
 .music-header h1,
 .events-header h1,
@@ -370,6 +372,19 @@ body {
     gap: 2rem;
     margin-top: 2rem;
     align-items: start;
+}
+
+.about-content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.about-content a:hover {
+    color: var(--white);
+}
+
+.about-content a:visited {
+    color: var(--secondary-color);
 }
 
 .profile-image-placeholder {
