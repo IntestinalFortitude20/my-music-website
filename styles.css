@@ -369,13 +369,20 @@ body {
     grid-template-columns: 300px 1fr;
     gap: 2rem;
     margin-top: 2rem;
+    align-items: start;
 }
 
 .profile-image-placeholder {
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 12px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    background-color: var(--medium-dark-bg);
+    border: 15px solid var(--placeholder-bg);
+    padding: 0;
+    display: block;
 }
 
 .bio {
@@ -1690,6 +1697,9 @@ body.menu-open {
     }
 
     .profile-image-placeholder {
+        width: 100%;
+        max-width: none;
+        height: auto;
         margin: 0 auto;
     }
 
